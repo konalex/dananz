@@ -1,7 +1,5 @@
 <template>
-	<div id="main">
-		<div class="h-10">
-
-		</div>
-	</div>
+	<section id="main" class="container mx-auto py-5">
+		<!--  -->
+	</section>
 </template>

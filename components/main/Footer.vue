@@ -8,7 +8,7 @@
 					One of the best furniture <br> agency.
 				</span>
 			</div>
-			<div class="flex flex-col w-[440px] mt-28">
+			<div class="flex flex-col w-[440px] mt-28 mb-20">
 				<MainFooterSubscribe class="max-w-[440px]" />
 				<div class="flex justify-end mt-10">
 					<MainFooterFollow />
