@@ -19,13 +19,12 @@
 	</nav>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { Navigation } from "@/types/navigation"
 
-const props = defineProps({
-	links: {
-		type: Array
-	}
-})
+defineProps<{
+	links: Navigation
+}>()
 </script>
 
 <style>

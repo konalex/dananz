@@ -8,9 +8,9 @@ dist
 # Node dependencies
 node_modules
 
-# Logs
-logs
-*.log
+# Locks
+package-lock.json
+yarn.lock
 
 # Misc
 .DS_Store

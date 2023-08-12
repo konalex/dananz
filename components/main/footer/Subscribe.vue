@@ -22,12 +22,14 @@
 	</div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const email = ref('');
-const emit = defineEmits('subscribe')
+const emit = defineEmits<{
+	subscribe: [string]
+}>()
 
 function subscribe() {
-	emit('subscribe')
+	emit('subscribe', email.value)
 	console.log('subscribe', email.value);
 }
 

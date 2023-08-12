@@ -18,8 +18,10 @@
 	</div>
 </template>
 
-<script setup>
-const socials = [
+<script setup lang="ts">
+import { Follow } from "@/types/navigation"
+
+const socials: Follow = [
 	{
 		icon: 'facebook',
 		url: 'www.facebook.com'
@@ -38,7 +40,7 @@ const socials = [
 	}
 ]
 
-const prepareLink = (link) => `https://${link}`
+const prepareLink = (link: string): string => `https://${link}`
 
 </script>
 

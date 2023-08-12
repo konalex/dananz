@@ -10,8 +10,10 @@
 	</header>
 </template>
 
-<script setup>
-const links = [
+<script setup lang="ts">
+import { Navigation } from "@/types/navigation"
+
+const links: Navigation = [
 	{
 		title: 'Home',
 		path: '/'

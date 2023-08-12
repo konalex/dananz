@@ -8,26 +8,25 @@
 	</component>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { NuxtLink } from '#components'
+import { Classes } from '@/types/classes' 
 
-const props = defineProps({
-	type: {
-		type: String,
-		default: 'default'
-	},
-	path: {
-		type: String
-	}
+const props = withDefaults(defineProps<{
+	type?: string,
+	path?: string
+}>(), {
+	type: 'default'
 })
 
-const base = 'px-8 py-[14px] transition text-sm font-medium leading-normal'
-const classes = {
+const base: string = 'px-8 py-[14px] transition text-sm font-medium leading-normal'
+const classes: Classes = {
 	default: `${base} text-white bg-default border-1 border-grayscale hover:bg-default-hover`,
 	reverse: `${base} text-gray bg-white hover:bg-white-hover`,
 	custom: 'transition'
 }
 
 const component = computed(() => props.path ? NuxtLink : 'button')
-const type = computed(() => classes[props.type])
+const type = computed(() => classes[props.type as keyof Classes])
+
 </script>
