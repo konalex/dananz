@@ -24,7 +24,7 @@
 				<img src="/images/about/about_2.jpg"
 					class="w-[883px] h-[525px] object-cover animate-load animate-delay-800 opacity-0">
 				<div
-					class="flex flex-col items-center justify-center bg-default py-[10] px-12 gap-y-[57px] animate-load animate-delay-900 opacity-0">
+					class="flex flex-col items-center justify-center bg-default py-[10px] px-12 gap-y-[57px] animate-load animate-delay-900 opacity-0">
 					<div v-for="(achievement, index) in achievements" :key="index"
 						class="flex flex-col justify-center items-center">
 						<h3 class="text-white text-[52px] leading-[1.6] font-normal">

@@ -6,8 +6,9 @@
 
 <style lang="scss">
 * {
-  font-family: 'Puppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 @import 'assets/styles/animation.scss';
+@import 'assets/styles/text.scss';
 </style>
