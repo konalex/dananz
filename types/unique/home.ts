@@ -1,4 +1,4 @@
-interface IContent {
+interface IMainContent {
 	title: string,
 	text: string
 	label?: string
@@ -16,15 +16,15 @@ interface ICEO {
 	position: string
 }
 
-interface IContentWithImages extends IContent {
+interface IContentWithImages extends IMainContent {
 	items: string[]
 }
 
-interface IContentWithItems extends IContent {
+interface IContentWithItems extends IMainContent {
 	items: IContentItems[]
 }
 
-interface IAbout extends IContent {
+interface IAbout extends IMainContent {
 	button: string,
 	ceo: ICEO
 }
@@ -34,7 +34,7 @@ interface IMaterials extends IContentWithImages {
 }
 
 export {
-	IContentWithItems as ContentWithItems,
-	IMaterials as Materials,
-	IAbout as About
+	IContentWithItems as MainContentWithItems,
+	IMaterials as MainMaterials,
+	IAbout as MainAbout
 }

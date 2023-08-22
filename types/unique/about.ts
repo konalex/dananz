@@ -1,12 +1,7 @@
-interface IContent {
-	title: string,
-	text?: string
-	content?: IContent
-}
+import { Content } from "types/content";
 
-type Content = IContent[];
+type AboutContent = Content[];
 
 export {
-	IContent,
-	Content
+	AboutContent
 }

@@ -92,7 +92,8 @@
 			</ul>
 		</div>
 		<!-- product -->
-		<div class="mt-36">
+		<ContentProducts class="mt-36" />
+		<!-- <div class="mt-36">
 			<div class="mb-5 flex items-center">
 				<h4 class="font-normal text-base leading-normal mr-[26px]">
 					{{ product.title }}
@@ -130,7 +131,7 @@
 					</div>
 				</li>
 			</ul>
-		</div>
+		</div> -->
 		<!-- material -->
 		<div class="mt-40 mb-32">
 			<div class="mb-5 flex items-center">
@@ -165,9 +166,9 @@
 
 <script setup lang="ts">
 
-import { ContentWithItems, Materials, About } from "@/types/unique/home"
+import { MainContentWithItems, MainMaterials, MainAbout } from "@/types/unique/home"
 
-const main: ContentWithItems = {
+const main: MainContentWithItems = {
 	title: 'Design your interor with high quality.',
 	image: '/images/home/home_1.jpg',
 	text: 'ALL RIGHT RESERVED',
@@ -187,7 +188,7 @@ const main: ContentWithItems = {
 	]
 }
 
-const about: About = {
+const about: MainAbout = {
 	title: 'ABOUT',
 	label: '"We`re one of the best furniture agency. Prioritizing customers and making purchases easy are the hallmarks of our agency."',
 	image: '/images/home/home_2.jpg',
@@ -200,7 +201,7 @@ const about: About = {
 	}
 }
 
-const service: ContentWithItems = {
+const service: MainContentWithItems = {
 	title: 'SERVICE',
 	label: 'attractive furniture with the best quality.',
 	text: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.',
@@ -221,31 +222,7 @@ const service: ContentWithItems = {
 	]
 }
 
-const product: ContentWithItems = {
-	title: 'PRODUCT',
-	label: 'Choose your product themes.',
-	text: 'Find the theme you want. If our choice of theme is not what you want, you can customize it as you want.',
-	items: [
-		{
-			title: 'Vintage',
-			text: 'the use of simple and limited elements to get the best effect or impression.'
-		},
-		{
-			title: 'Minimalist',
-			text: 'the use of simple and limited elements to get the best effect or impression.'
-		},
-		{
-			title: 'Modern',
-			text: 'the use of simple and limited elements to get the best effect or impression.'
-		},
-		{
-			title: 'transitional',
-			text: 'the use of simple and limited elements to get the best effect or impression.'
-		}
-	]
-}
-
-const material: Materials = {
+const material: MainMaterials = {
 	title: 'MATERIAL',
 	label: 'choice of materials for quality furniture.',
 	text: 'You can custom the material as desired. And our furniture uses the best materials and selected quality materials.',
