@@ -1,15 +1,6 @@
 <template>
 	<section id="services" class="container mx-auto mt-20">
-		<h2 class="text-[56px] text-center font-bold leading-[1.4] mb-9 animate-load animate-delay-100 opacity-0">
-			{{ main.title }}
-		</h2>
-		<p
-			class="text-center text-lg font-normal leading-[1.6] mb-[86px] w-1/2 mx-auto animate-load animate-delay-300 opacity-0">
-			{{ main.text }}
-		</p>
-		<img src="/images/services/services_main.jpg"
-			class="h-[513px] w-full object-cover opacity-0 animate-load animate-delay-500 origin-bottom">
-
+		<ContentHeader :content="main" />
 		<!-- ACHIEVEMENT -->
 		<div class="my-[100px]">
 			<div class="mb-5 flex items-center">
@@ -45,10 +36,12 @@
 
 <script setup lang="ts">
 import { ServiceContent } from "@/types/unique/services"
+import { ContentWithImage } from "types/content";
 
-const main: ServiceContent = {
+const main: ContentWithImage = {
 	title: 'Services',
-	text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+	text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+	image: '/images/services/services_main.jpg'
 }
 
 const achievement: ServiceContent = {
@@ -72,5 +65,3 @@ const achievement: ServiceContent = {
 }
 
 </script>
-
-<style></style>

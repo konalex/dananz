@@ -5,6 +5,10 @@ interface IContent {
 	content?: IContent
 }
 
+interface IContentWithImage extends IContent {
+	image?: string
+}
+
 interface IContentItems {
 	title: string,
 	text: string
@@ -24,6 +28,7 @@ import { AboutContent } from "./unique/about"
 
 export {
 	IContent as Content,
+	IContentWithImage as ContentWithImage,
 	IContentWithItems as ContentWithItems,
 	IContentWithImages as ContentWithImages,
 	ServiceContent,

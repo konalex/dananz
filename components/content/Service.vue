@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<section>
 		<div class="mb-5 flex items-center">
 			<h4 class="font-normal text-base leading-normal mr-[26px] uppercase">
 				{{ service.title }}
@@ -24,7 +24,7 @@
 				</p>
 			</div>
 		</div>
-	</div>
+	</section>
 </template>
 
 <script setup lang="ts">

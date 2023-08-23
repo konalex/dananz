@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<section>
 		<div class="mb-5 flex items-center">
 			<h4 class="font-normal text-base leading-normal mr-[26px]">
 				{{ product.title }}
@@ -8,9 +8,9 @@
 		</div>
 		<div class="flex items-start justify-between">
 			<div class="w-1/2">
-				<p class="w-2/3 text-4xl leading-[1.7] font-semibold">
+				<h4 class="w-2/3 text-4xl leading-[1.7] font-semibold">
 					{{ product.label }}
-				</p>
+				</h4>
 			</div>
 			<div class="w-1/2">
 				<p class="w-9/12 ml-auto text-lg font-normal leading-[1.6] text-grayscale-light">
@@ -41,7 +41,7 @@
 				</NuxtLink>
 			</li>
 		</ul>
-	</div>
+	</section>
 </template>
 
 <script lang="ts" setup>

@@ -1,14 +1,6 @@
 <template>
 	<section id="about" class="container mx-auto mt-20">
-		<h2 class="text-[56px] text-center font-bold leading-[1.4] mb-9 animate-load animate-delay-100 opacity-0">
-			{{ main.title }}
-		</h2>
-		<p
-			class="text-center text-lg font-normal leading-[1.6] mb-[86px] w-1/2 mx-auto animate-load animate-delay-300 opacity-0">
-			{{ main.text }}
-		</p>
-		<img src="/images/about/about_1.jpg"
-			class="h-[513px] w-full object-cover opacity-0 animate-load animate-delay-500 origin-bottom">
+		<ContentHeader :content="main" />
 		<!-- ACHIEVEMENT -->
 		<div class="my-[100px]">
 			<div class="mb-5 flex items-center">
@@ -21,8 +13,7 @@
 				{{ achievement.text }}
 			</p>
 			<div class="flex justify-between">
-				<img src="/images/about/about_2.jpg"
-					class="w-[883px] h-[525px] object-cover animate-load animate-delay-800 opacity-0">
+				<img :src="achievement.image" class="w-[883px] h-[525px] object-cover animate-load animate-delay-800 opacity-0">
 				<div
 					class="flex flex-col items-center justify-center bg-default py-[10px] px-12 gap-y-[57px] animate-load animate-delay-900 opacity-0">
 					<div v-for="(achievement, index) in achievements" :key="index"
@@ -44,16 +35,18 @@
 
 <script setup lang="ts">
 import { AboutContent } from "@/types/unique/about"
-import { Content } from "types/content";
+import { ContentWithImage } from "types/content";
 
-const main: Content = {
+const main: ContentWithImage = {
 	title: 'About',
-	text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.'
+	text: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+	image: '/images/about/about_1.jpg'
 }
 
-const achievement: Content = {
+const achievement: ContentWithImage = {
 	title: 'ACHIEVEMENT',
-	text: 'interior customization with Danaanz, best quality with professional workers'
+	text: 'interior customization with Danaanz, best quality with professional workers',
+	image: '/images/about/about_2.jpg'
 }
 
 const achievements: AboutContent = [
