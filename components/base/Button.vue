@@ -13,10 +13,10 @@ import { NuxtLink } from '#components'
 import { Classes } from '@/types/classes' 
 
 const props = withDefaults(defineProps<{
-	type?: string,
+	button?: string,
 	path?: string
 }>(), {
-	type: 'default'
+	button: 'default'
 })
 
 const base: string = 'px-8 py-[14px] transition text-sm font-medium leading-normal'
@@ -27,6 +27,6 @@ const classes: Classes = {
 }
 
 const component = computed(() => props.path ? NuxtLink : 'button')
-const type = computed(() => classes[props.type as keyof Classes])
+const type = computed(() => classes[props.button as keyof Classes])
 
 </script>

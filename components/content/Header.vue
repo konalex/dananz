@@ -5,7 +5,7 @@
 	<p class="text-center text-lg font-normal leading-[1.6] mb-[86px] w-1/2 mx-auto animate-load animate-delay-300 opacity-0">
 		{{ content.text }}
 	</p>
-	<img :src="content.image" class="h-[513px] w-full object-cover opacity-0 animate-load animate-delay-500 origin-bottom">
+	<img v-if="content.image" :src="content.image" class="h-[513px] w-full object-cover opacity-0 animate-load animate-delay-500 origin-bottom">
 </template>
 
 <script lang="ts" setup>

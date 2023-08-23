@@ -8,7 +8,7 @@
 				<span>
 					Contact us below to work together to build your <br> amazing interior
 				</span>
-				<BaseButton type="reverse" path="/contact" class="mt-5">
+				<BaseButton button="reverse" path="/contact" class="mt-5">
 					Contact Us
 				</BaseButton>
 			</div>

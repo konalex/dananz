@@ -148,7 +148,7 @@
 					<span class="text-lg font-normal leading-[1.6] text-grayscale-light w-4/5 mb-6">
 						{{ material.text }}
 					</span>
-					<BaseButton type="reverse" class="border-[1px]">
+					<BaseButton button="reverse" class="border-[1px]">
 						{{ material.button }}
 					</BaseButton>
 				</div>
