@@ -8,7 +8,7 @@
 				v-for="social in socials"
 				:key="social.icon"
 				:path="prepareLink(social.url)"
-				type="custom"
+				button="custom"
 				target="_blank"
 				class="w-9 h-9 rounded-full bg-gray-light p-0 hover:bg-gray hover:text-white"
 			>
@@ -43,5 +43,3 @@ const socials: Follow = [
 const prepareLink = (link: string): string => `https://${link}`
 
 </script>
-
-<style></style>

@@ -1,6 +1,6 @@
 <template>
 	<section id="about" class="container mx-auto mt-20">
-		<ContentHeader :content="main" />
+		<PagesHeader :content="main" />
 		<!-- ACHIEVEMENT -->
 		<div class="my-[100px]">
 			<div class="mb-5 flex items-center">
@@ -29,7 +29,7 @@
 			</div>
 		</div>
 		<!-- SERVICE -->
-		<ContentService class="mb-[100px]" />
+		<PagesService class="mb-[100px]" />
 	</section>
 </template>
 

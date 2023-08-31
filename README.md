@@ -1,63 +1,21 @@
-# Nuxt 3 Minimal Starter
+# Dananz
+### Pet project (NON COMMERCIAL)
+---
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Style from Figma Community - [link](https://www.figma.com/file/OfeVmBzq7TJrXvHFxmqpvb/Dananz---Interior-Design-Website-UI-KIT-(Community)-(Copy)?type=design&node-id=1%3A2&mode=dev)
 
-## Setup
 
-Make sure to install the dependencies:
+Tech stack:
 
-```bash
-# npm
-npm install
+- Nuxt 3
+- Vue 3
+- TypeScript
+- TailwindCSS
+- Nuxt Content
 
-# pnpm
-pnpm install
+---
+### Prepare
+```npm install```
 
-# yarn
-yarn install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Run
+```npm run dev```

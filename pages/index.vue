@@ -55,7 +55,7 @@
 					<p class="font-normal text-grayscale-light text-lg leading-[1.6]">
 						{{ about.text }}
 					</p>
-					<BaseButton class="mt-10">
+					<BaseButton class="mt-10" path="/about">
 						{{ about.button }}
 					</BaseButton>
 				</div>
@@ -77,61 +77,24 @@
 			</p>
 			<img :src="service.image" class="w-11/12 h-[525px] object-cover right-0 absolute -z-10 mt-28">
 			<ul class="mt-10 bg-white w-2/3 pb-5">
-				<li v-for="(item, index) in service.items" :key="index"
-					class="relative flex justify-start items-center text-gray text-2xl font-semibold py-5 cursor-pointer group  transition">
-					<span class="mr-10">
-						0{{ index + 1 }}
-					</span>
-					<span class="">
-						{{ item.title }}
-					</span>
-					<div class="absolute right-10 group-hover:translate-x-3 transition">
-						<BaseIcon name="arrow" />
-					</div>
-				</li>
+				<NuxtLink to="/services">
+					<li v-for="(item, index) in service.items" :key="index"
+						class="relative flex justify-start items-center text-gray text-2xl font-semibold py-5 cursor-pointer group  transition">
+						<span class="mr-10">
+							0{{ index + 1 }}
+						</span>
+						<span class="">
+							{{ item.title }}
+						</span>
+						<div class="absolute right-10 group-hover:translate-x-3 transition">
+							<BaseIcon name="arrow" />
+						</div>
+					</li>
+				</NuxtLink>
 			</ul>
 		</div>
 		<!-- product -->
-		<ContentProducts class="mt-36" />
-		<!-- <div class="mt-36">
-			<div class="mb-5 flex items-center">
-				<h4 class="font-normal text-base leading-normal mr-[26px]">
-					{{ product.title }}
-				</h4>
-				<div class="h-[2px] w-[464px] bg-black animate-line animate-delay-800 origin-left scale-x-0"></div>
-			</div>
-			<div class="flex items-start justify-between">
-				<div class="w-1/2">
-					<p class="w-2/3 text-4xl leading-[1.7] font-semibold">
-						{{ product.label }}
-					</p>
-				</div>
-				<div class="w-1/2">
-					<p class="w-9/12 ml-auto text-lg font-normal leading-[1.6] text-grayscale-light">
-						{{ product.text }}
-					</p>
-				</div>
-			</div>
-			<ul class="mt-20">
-				<li v-for="(item, index) in product.items" :key="index"
-					class="flex group items-start relative mb-11 cursor-pointer">
-					<span class="text-[32px] font-semibold leading-[1.4] text-gray absolute">
-						0{{ index + 1 }}
-					</span>
-					<div class="ml-32 flex flex-col">
-						<span class="text-[32px] font-semibold leading-[1.4] text-gray mb-6 capitalize">
-							{{ item.title }}
-						</span>
-						<span class="w-2/3">
-							{{ item.text }}
-						</span>
-					</div>
-					<div class="absolute right-10 top-2 group-hover:translate-x-3 transition">
-						<BaseIcon name="arrow" />
-					</div>
-				</li>
-			</ul>
-		</div> -->
+		<PagesProducts class="mt-36" />
 		<!-- material -->
 		<div class="mt-40 mb-32">
 			<div class="mb-5 flex items-center">

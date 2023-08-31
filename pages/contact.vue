@@ -1,6 +1,6 @@
 <template>
 	<section id="contact" class="container mx-auto mt-20">
-		<ContentHeader :content="main" />
+		<PagesHeader :content="main" />
 		<!-- form -->
 		<form @submit.prevent="submit" class="flex flex-col justify-start items-center w-2/3 mx-auto">
 			<div class="flex w-full animate-load animate-delay-200">
@@ -21,7 +21,7 @@
 		</form>
 		<!-- location -->
 		<section class="mt-24 mb-28">
-			<ContentSectionTItle :title="location.title" :delay="500" />
+			<PagesSectionTItle :title="location.title" :delay="500" />
 			<div class="flex">
 				<div class="flex flex-col w-1/3 animate-load animate-delay-600">
 					<div v-for="(items, index) in location.info" :key="index"
